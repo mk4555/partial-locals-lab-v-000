@@ -29,5 +29,6 @@ class StudentsController < ApplicationController
   end
 
   def search
+    
   end
 end
