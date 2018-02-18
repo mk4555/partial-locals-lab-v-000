@@ -28,7 +28,4 @@ class StudentsController < ApplicationController
     params.require(:student).permit(:name, :birthday, :hometown)
   end
 
-  def search
-    
-  end
 end
