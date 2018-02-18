@@ -15,7 +15,6 @@ class Student < ActiveRecord::Base
   has_many :classrooms, through: :classroom_students
 
   def self.search(student)
-    @student = []
     if student.empty?
       @student = self.all
     else
