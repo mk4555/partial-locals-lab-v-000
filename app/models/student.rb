@@ -19,7 +19,7 @@ class Student < ActiveRecord::Base
     if student.empty?
       @student = self.all
     else
-      @student = Student.all.select
+      @student = self.all.select
     end
   end
 end
