@@ -16,5 +16,10 @@ class Student < ActiveRecord::Base
 
   def self.search(student)
     @student = []
+    if student.empty?
+      @student = self.all
+    else
+      @student = Student.all.select
+    end
   end
 end
